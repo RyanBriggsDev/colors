@@ -1,0 +1,8 @@
+nav {
+    display: grid;
+    place-items: center;
+}
+
+nav a {
+    text-align: center;
+}
