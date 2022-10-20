@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import Error404 from './pages/Error404'
 
 import Nav from './components/Nav'
+import Blue from './pages/Blue'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
                 <Route path='/' element={<Home />} />
                 <Route path='/home' element={<Home />} />
                 <Route path='/404' element={<Error404 />} />
+                <Route path='/blue' element={<Blue />} />
             </Routes>
         </div>
     </Router>

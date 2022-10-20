@@ -18,6 +18,8 @@ body {
   padding: 0;
   font-family: poppinsReg;
   font-size: 16px;
+  background-color: black;
+  color: white;
 }
 
 h1 {
@@ -33,13 +35,84 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
 .layout {
+  display: flex;
+  justify-items: space-between;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
 }
 
-.home {
-  display: grid;
-  place-items: center;
+/* home */
+
+.page-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 100%;
+  flex-direction: column;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100vw;
+  height: 100%;
+  place-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+/* blue */
+
+.blue {
+  background-color: blue;
+}
+
+/* yellow  */
+
+.yellow {
+  background-color: yellow;
+  color: black;
+}
+
+/* green  */
+
+.green {
+  background-color: green;
+}
+
+/* lilac  */
+
+.lilac {
+  background-color: pink;
+}
+
+/* red  */
+
+.red {
+  background-color: red;
+}
+
+/* orange  */
+
+.orange {
+  background-color: orange;
 }
