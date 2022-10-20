@@ -1,7 +1,9 @@
+import Colors from "../components/Colors"
+
 function Blue() {
   return (
-    <div className="blue w-100 h-100">
-        
+    <div className="page-layout blue w-100 h-100">
+      <Colors />        
     </div>
   )
 }
