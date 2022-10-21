@@ -21,7 +21,7 @@ body {
   background-color: black;
   color: white;
 }
-rgb(13, 58, 92)
+
 h1 {
   font-family: poppinsBold;
 }
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6, p {
 .color-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   height: 100%;
   width: 100%;
   gap: 2rem;
@@ -153,4 +153,29 @@ h1, h2, h3, h4, h5, h6, p {
 
 .orange {
   background-color: orange;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 750px) {
+  .color-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .card-content p {
+    min-width: 50%;
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .color-grid {
+    grid-template-columns: 1fr;
+  }
+  .card-content p {
+    padding: 0.5rem;
+  }
+
 }
