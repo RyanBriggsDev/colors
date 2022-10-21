@@ -29,7 +29,7 @@ Colors.defaultProps = {
     color1: 'rgb(13, 58, 92)',
     color2: 'rgb(0, 89, 149)',
     color3: '#000',
-    color4: '#fff',
+    color4: '#f2f2f2',
     color5: '#6e6e6e',
-    color6: '#303030'
+    color6: '#303030',
 }
