@@ -8,7 +8,7 @@ function Nav() {
       <p onClick={() => n('/')} className="pointer">
         Home
       </p>
-      <a target="_blank" href="https://ryanbriggs.dev">
+      <a target="_blank" href="https://ryanbriggs.dev" rel="noreferrer">
         Portfolio
       </a>
     </nav>
