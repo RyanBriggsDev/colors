@@ -1,18 +1,20 @@
-import { useNavigate } from 'react-router-dom'
+import { Container } from './styled/Container.styled'
+import { StyledNav } from './styled/Nav.styled'
+import Button from './Button'
 
-function Nav() {
-  const n = useNavigate()
-
+export default function Nav() {
   return (
-    <nav>
-      <p onClick={() => n('/')} className="pointer">
-        Home
-      </p>
-      <a target="_blank" href="https://ryanbriggs.dev" rel="noreferrer">
-        Portfolio
-      </a>
-    </nav>
+    <StyledNav>
+      <Container>
+        <div>
+          <Button primary internal href="/">
+            Home
+          </Button>
+          <Button external href="https://ryanbriggs.dev">
+            Portfolio
+          </Button>
+        </div>
+      </Container>
+    </StyledNav>
   )
 }
-
-export default Nav
