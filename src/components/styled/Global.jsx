@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
+
     *::before,
     *::after,
     * {
@@ -14,6 +15,7 @@ export const GlobalStyles = createGlobalStyle`
         color: ${({ theme }) => theme.comps.body.color};
         padding: 0;
         margin: 0;
+        font-family: Sans-Serif;
     }
 
     h1, h2, h3, h4, h5, h6, p, a, ul, li {
