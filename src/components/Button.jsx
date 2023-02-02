@@ -1,7 +1,8 @@
 import { StyledButton } from './styled/Button.styled'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function Button({ children, primary, external, internal, href, onClick }) {
+  const navigate = useNavigate()
   if (external)
     return (
       <StyledButton>
@@ -13,8 +14,8 @@ export default function Button({ children, primary, external, internal, href, on
 
   if (internal) {
     return (
-      <StyledButton primary={primary}>
-        <Link to={href}>{children}</Link>
+      <StyledButton primary={primary} onClick={() => navigate(`${href}`)}>
+        {children}
       </StyledButton>
     )
   }
